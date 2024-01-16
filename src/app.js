@@ -36,6 +36,10 @@ app.get('/', (req, res) => {
   res.send('Hello from Render!');
 });
 
+app.get('/abc', (req, res) => {
+  res.send('Hello from Render abc!');
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
