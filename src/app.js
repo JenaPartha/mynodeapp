@@ -5,7 +5,7 @@ const userRoutes = require('./routes/user.routes');
 const cors = require('cors');
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // Use body-parser middleware to parse JSON data
 app.use(bodyParser.json());
