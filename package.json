@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon server.js",
+    "build": "webpack",
     "test": "mocha"
   },
   "engines": {
@@ -24,6 +25,8 @@
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
     "mocha": "^7.0.0",
-    "mongoose": "^8.0.3"
+    "mongoose": "^8.0.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
