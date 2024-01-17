@@ -9,11 +9,11 @@
 
 // // Use body-parser middleware to parse JSON data
 // app.use(bodyParser.json());
-// app.use(cors({
-//   origin: 'http://localhost:3000', // Replace with your specific domain
-//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//   credentials: true, // Allow sending cookies
-// }));
+app.use(cors({
+  origin: '*', // Replace with your specific domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Allow sending cookies
+}));
 
 // // Connect to MongoDB
 // // connectDB();
