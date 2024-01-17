@@ -9,11 +9,11 @@ const cors = require('cors');
 
 // // Use body-parser middleware to parse JSON data
 // app.use(bodyParser.json());
-app.use(cors({
-  origin: '*', // Replace with your specific domain
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Allow sending cookies
-}));
+// app.use(cors({
+//   origin: '*', // Replace with your specific domain
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   credentials: true, // Allow sending cookies
+// }));
 
 // // Connect to MongoDB
 // // connectDB();
@@ -29,6 +29,12 @@ app.use(cors({
 
 const express = require('express');
 const app = express();
+
+app.use(cors({
+  origin: '*', // Replace with your specific domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Allow sending cookies
+}));
 
 const port = process.env.PORT || 3001;
 
